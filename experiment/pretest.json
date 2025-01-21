@@ -5,9 +5,9 @@
       "question": "If the solubility of borax in water is S, what will be the solubility product of Borax?",
       "answers": {
         "a": "S",
-        "b": "2S2",
-        "c": "4S3",
-        "d": "S3"
+        "b": "2S²",
+        "c": "4S³",
+        "d": "S³"
       },
       "explanations": {
         "a": "Explanation 1  <a href='www.google.com'>here</a>",
