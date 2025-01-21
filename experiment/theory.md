@@ -1,26 +1,26 @@
 Borax is sparingly soluble in water. The equilibrium expression for the process that gives two sodium ions, one borate ion, B<sub>4</sub>O<sub>5</sub>(OH)<sub>4</sub><sup>-2</sup>, and ten water molecules is: <br>
 
-Na<sub>2</sub>B<sub>4</sub>O<sub>5</sub>(OH)<sub>4</sub> 10H<sub>2</sub>O (s) ⇌ 2Na<sup>+</sup>(aq) + B<sub>4</sub>O<sub>5</sub>(OH)<sub>4</sub><sup>2-</sup>(aq) + 10 H<sub>2</sub>O (l) .......... (1) <br>
+<b>Na<sub>2</sub>B<sub>4</sub>O<sub>5</sub>(OH)<sub>4</sub> 10H<sub>2</sub>O (s) ⇌ 2Na<sup>+</sup>(aq) + B<sub>4</sub>O<sub>5</sub>(OH)<sub>4</sub><sup>2-</sup>(aq) + 10 H<sub>2</sub>O (l)</b> .......... (1) <br>
 
 The reaction can be written in simplified form as:<br>
 
-Borax(s) ⇌ 2Na<sup>+</sup>(aq) + Borate (aq) + 10 H<sub>2</sub>O (l)	.......... (2)<br>
+<b>Borax(s) ⇌ 2Na<sup>+</sup>(aq) + Borate (aq) + 10 H<sub>2</sub>O (l)</b>	.......... (2)<br>
 
 Since liquid water and solid borax are not included in the K<sub>sp</sub> expression, the solubility product expression associated with this reaction is:<br>
 
-K<sub>sp</sub> = [Na <sub>+</sub>]<sup>2</sup> [Borate]	.......... (3) <br>
+<b>K<sub>sp</sub> = [Na <sub>+</sub>]<sup>2</sup> [Borate]</b>	.......... (3) <br>
 
 The concentration of the borate ion in equilibrium will be determined by titration with standardized HCl according to the equation:<br>
 
-B<sub>4</sub>O<sub>5</sub>(OH)<sub>4</sub><sup>2-</sup>(aq) + 2HCl (aq) + 3 H<sub>2</sub>O (l) = 4H<sub>3</sub>BO<sub>3</sub> (aq) + 2Cl<sup>-</sup>(aq) .......... (4) <br>
+<b>B<sub>4</sub>O<sub>5</sub>(OH)<sub>4</sub><sup>2-</sup>(aq) + 2HCl (aq) + 3 H<sub>2</sub>O (l) = 4H<sub>3</sub>BO<sub>3</sub> (aq) + 2Cl<sup>-</sup>(aq)</b> .......... (4) <br>
 
 According to equation (4), two moles of HCl are required for 1 mol of borate. Thus,<br>
 
-[B<sub>4</sub>O<sub>5</sub>(OH)<sub>4</sub><sup>2-</sup>]=(Moles of HCl required for titration)/(2×Volume of solution required)  .......... (5) <br>
+<b>[B<sub>4</sub>O<sub>5</sub>(OH)<sub>4</sub><sup>2-</sup>]=(Moles of HCl required for titration)/(2×Volume of solution required)</b>  .......... (5) <br>
 
 Also from the stoichiometric relationship in equation (1): 1 mole borate ≡ 2 mole Na<sup>+</sup>. Thus, <br>
 
-[Na<sup>+</sup>] = 2[B<sub>4</sub>O<sub>5</sub>(OH)<sub>4</sub><sup>2-</sup>] .......... (6) <br>
+<b>[Na<sup>+</sup>] = 2[B<sub>4</sub>O<sub>5</sub>(OH)<sub>4</sub><sup>2-</sup>]</b> .......... (6) <br>
 
 K<sub>sp</sub> of borax can be calculated from the values of [B<sub>4</sub>O<sub>5</sub>(OH)<sub>4</sub><sup>2-</sup>] and [Na<sup>+</sup>]. The K<sub>sp</sub> for borax will be evaluated at room temperature (T<sub>1</sub>) and at about 278 K (T<sub>2</sub>). K<sub>sp</sub> values at two temperatures allows the evaluation of the enthalpy change using Equation (7). <br>
 
