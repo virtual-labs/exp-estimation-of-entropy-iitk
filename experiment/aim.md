@@ -1,1 +1,1 @@
-### Practical understanding about various thermodynamic parameters of a reaction
+Practical understanding about various thermodynamic parameters of a reaction
