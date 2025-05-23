@@ -1,7 +1,11 @@
 let currentStep = "step1";
 let tempSetter = document.querySelector(".tempSetter");
+let head = document.querySelector(".head");
 let flask = document.getElementById("img22"); 
+let conicalflask = document.getElementById("img13"); 
 let cylinder = document.getElementById("img14");
+let cyl = document.getElementById("img26");
+
 // Speak Function
 function speak(text) {
     window.speechSynthesis.cancel();
@@ -12,14 +16,18 @@ function speak(text) {
     text_speak.lang = "en-US";
     window.speechSynthesis.speak(text_speak);
 }
+window.onload = function () {
+    let firstSpeak = document.getElementById("text");
+    if (firstSpeak) {
+        speak(firstSpeak.innerText);
+    }
+};
+
 
 function setMsg(msgElement, text) {
     msgElement.innerText = text;
     speak(text);
 }
-
-let firstSpeak = document.getElementById("text2");
-speak(firstSpeak.innerText);
 
 // 2.1: Pouring Na2Co3 to Measuring Cylinder
 
@@ -27,12 +35,13 @@ function pourbyNa2co3() {
     if (currentStep !== "step1") return;
     currentStep = "step2";
     let bottle = document.getElementById("img17");
-    let msg = document.getElementById("text2");
-    bottle.style.transform = "translateX(-13.8vw) translateY(-4vh) rotate(-60deg)";
+    let msg = document.getElementById("text3");
+    bottle.style.transform = "translateX(-13.8vw) translateY(-8vh) rotate(-60deg)";
     setMsg(msg, "Pouring Na2CO3 into Measuring Cylinder...");
     setTimeout(() => {
         bottle.style.transform = "translateX(0) translateY(0) rotate(0deg)";
-        setMsg(msg, "Now, Click on Measuring Cylinder to pour that 5ml Na2Co3 into conical Flask.");
+        cylinder.src = "./images/measuring-cylinder4.png";
+        setMsg(msg, "Now, Click on Measuring Cylinder to pour that 5ml Na2CO3 into conical Flask.");
     }, 3000);
 }
 
@@ -42,11 +51,12 @@ function pourbymeasuringCylinder() {
     if (currentStep !== "step2") return;
     currentStep = "step3";
     let cylinder = document.getElementById("img14");
-    let msg = document.getElementById("text2");
+    let msg = document.getElementById("text3");
     cylinder.style.transform = "translateX(-6vw) translateY(8vh) rotate(-90deg)";
     setMsg(msg, "Pouring from Measuring Cylinder into Flask...");
     setTimeout(() => {
         cylinder.style.transform = "translateX(0) translateY(0) rotate(0deg)";
+        conicalflask.src = "./images/conicalflask2.png";
         setMsg(msg, "Now, Click on Micropipette to gather 3 drops of Bromo Cresol Green Indicator");
     }, 3000);
 }
@@ -57,7 +67,7 @@ function pourbymicropippet() {
     if (currentStep !== "step3") return;
     currentStep = "step4";
     let pipette = document.getElementById("img19");
-    let msg = document.getElementById("text2");
+    let msg = document.getElementById("text3");
     pipette.style.transform = "translateX(-4.1vw) translateY(-6vh) rotate(-90deg)";
     setMsg(msg, "Gathering indicator...");
     setTimeout(() => {
@@ -80,7 +90,7 @@ function goingfortitration() {
     if (currentStep !== "step4") return;
     currentStep = "step5";
     let flask = document.getElementById("img13");
-    let msg = document.getElementById("text2");
+    let msg = document.getElementById("text3");
     flask.style.transition = "transform 3s ease-in-out";
     flask.style.transform = "translateX(-10.8vw) translateY(-1.1vh)";
     setMsg(msg, "Starting Titration... Shake the flask and mix with hcl drop by drop untill the blue color solution changes to yellow.");
@@ -88,14 +98,19 @@ function goingfortitration() {
         flask.classList.add("shake");
         setTimeout(() => {
             flask.classList.remove("shake");
+            flask.src = "./images/conicalflask3.png"
             flask.style.transform = "translateX(0) translateY(0) rotate(0deg)";
             setMsg(msg, "Titration complete! Now click on the Next button to perform the main experiment.");
         }, 5000);
     }, 3000);
 }
+window.onload = function () {
+    let thirdSpeak = document.getElementById("text3");
+    if (thirdSpeak) {
+        speak(thirdSpeak.innerText);
+    }
+};
 
-let secSpeak = document.getElementById("text3");
-speak(secSpeak.innerText);
 
 // 3.1: Pouring Borax to Flask
 
@@ -122,6 +137,7 @@ function pourwater() {
     setMsg(msg, "Pouring Distilled water into Measuring Cylinder to measure 75ml...");
     setTimeout(() => {
         beaker.style.transform = "translateX(0) translateY(0) rotate(0deg)";
+        cyl.src = "./images/measuring-cylinder2.png";
         setMsg(msg, "Now click on the measuring cylinder to pour that 75ml distilled water into the flask.");
     }, 3000);
 }
@@ -136,6 +152,8 @@ function pourbycylinder() {
     setMsg(msg, "Pouring from Measuring Cylinder into Flask...");
     setTimeout(() => {
         cyl.style.transform = "translateX(0) translateY(0) rotate(0deg)";
+        flask.src = "./images/conicalflask2.png";
+        cyl.src = "./images/measuring-cylinder.png";
         setMsg(msg, "Now Click On the flask to mix the mixture for 10-15 minutes and take it in Temperature Bath and Set Temperature from Following and Wait for 10 minutes...");
     }, 3000);
 }
@@ -153,6 +171,7 @@ function goingtobath() {
             flask.style.transform = "translateX(34vw) translateY(-12vh)";
             setTimeout(() => {
                 if (tempSetter) tempSetter.style.visibility = "visible";
+                if (head) head.style.visibility = "visible";
             }, 3000);
         }, 100);
     }, 3000);
@@ -164,16 +183,19 @@ function gathersolution() {
     if (currentStep !== "step5") return;
     currentStep = "step6";
     let pipette2 = document.getElementById("img27");
+    let titrationflask = document.getElementById("img31");
     let msg = document.getElementById("text3");
     pipette2.style.transform = "translateX(-6.5vw) translateY(-14vh) rotate(-90deg)";
     setMsg(msg, "Gathering Borax Solution...");
     setTimeout(() => {
         setMsg(msg, "Click Again on micropippet to release the Borax Solution on Titration Flask.");
-    }, 1700);
+        flask.src = "./images/conical flask.png";
+    }, 2500);
     pipette2.addEventListener("click", () => {
         setTimeout(() => {
             pipette2.style.transform = "translateX(-12.5vw) translateY(-14vh) rotate(-90deg)";
             setTimeout(() => {
+                titrationflask.src = "./images/conicalflask2.png";
                 pipette2.style.transform = "translateX(0) translateY(0) rotate(0deg)";
                 setMsg(msg, "Borax Solution added to titration flask. Now Add Bromo Cresol Green Indicator by clicking on another Pippet on right next.");
             }, 3000);
@@ -216,8 +238,9 @@ function goingfortitration2() {
         flask.classList.add("shake3");
         setTimeout(() => {
             flask.classList.remove("shake3");
+            flask.src = "./images/conicalflask3.png";
             flask.style.transform = "translateX(0) translateY(0) rotate(0deg)";
-            setMsg(msg, "Titration completed. <br>Take the Reading and complete the calculation as well as experiment.");
+            setMsg(msg, "Titration completed. Take the Reading and complete the calculation.");
         }, 5000);
     }, 3000);
 }
@@ -227,6 +250,7 @@ function goingfortitration2() {
 function temp1() {
     document.querySelector(".temp").innerHTML = "<h6>20<sup>o</sup>C</h6>";
     if (tempSetter) setTimeout(() => tempSetter.style.visibility = "hidden", 1000);
+    if (head) setTimeout(() => head.style.visibility = "hidden", 1000);
     setTimeout(() => {
         flask.style.transform = "translateX(0) translateY(0)";
         setMsg(document.getElementById("text3"), "Borax Solution is Heated, Now gather 5ml Borax Solution through Micropippet.");
@@ -236,6 +260,7 @@ function temp1() {
 function temp2() {
     document.querySelector(".temp").innerHTML = "<h6>30<sup>o</sup>C</h6>";
     if (tempSetter) setTimeout(() => tempSetter.style.visibility = "hidden", 1000);
+    if (head) setTimeout(() => head.style.visibility = "hidden", 1000);
     setTimeout(() => {
         flask.style.transform = "translateX(0) translateY(0)";
         setMsg(document.getElementById("text3"), "Borax Solution is Heated, Now gather 5ml Borax Solution through Micropippet.");
@@ -245,6 +270,7 @@ function temp2() {
 function temp3() {
     document.querySelector(".temp").innerHTML = "<h6>40<sup>o</sup>C</h6>";
     if (tempSetter) setTimeout(() => tempSetter.style.visibility = "hidden", 1000);
+    if (head) setTimeout(() => head.style.visibility = "hidden", 1000);
     setTimeout(() => {
         flask.style.transform = "translateX(0) translateY(0)";
         setMsg(document.getElementById("text3"), "Borax Solution is Heated, Now gather 5ml Borax Solution through Micropippet.");
@@ -254,6 +280,7 @@ function temp3() {
 function temp4() {
     document.querySelector(".temp").innerHTML = "<h6>50<sup>o</sup>C</h6>";
     if (tempSetter) setTimeout(() => tempSetter.style.visibility = "hidden", 1000);
+    if (head) setTimeout(() => head.style.visibility = "hidden", 1000);
     setTimeout(() => {
         flask.style.transform = "translateX(0) translateY(0)";
         setMsg(document.getElementById("text3"), "Borax Solution is Heated, Now gather 5ml Borax Solution through Micropippet.");
@@ -263,6 +290,7 @@ function temp4() {
 function temp5() {
     document.querySelector(".temp").innerHTML = "<h6>60<sup>o</sup>C</h6>";
     if (tempSetter) setTimeout(() => tempSetter.style.visibility = "hidden", 1000);
+    if (head) setTimeout(() => head.style.visibility = "hidden", 1000);
     setTimeout(() => {
         flask.style.transform = "translateX(0) translateY(0)";
         setMsg(document.getElementById("text3"), "Borax Solution is Heated, Now gather 5ml Borax Solution through Micropippet.");
