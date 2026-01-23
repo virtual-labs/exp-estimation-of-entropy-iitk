@@ -1,1 +1,1 @@
-### Aim of the experiment
+Practical understanding about various thermodynamic parameters of a reaction

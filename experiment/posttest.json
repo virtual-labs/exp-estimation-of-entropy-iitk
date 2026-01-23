@@ -2,12 +2,12 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "This is a Sample Question 1?",
+      "question": "According to the experiment, at which temperature the reaction becomes spontaneous?",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "20°C",
+        "b": "30°C",
+        "c": "40°C",
+        "d": "50°C"
       },
       "explanations": {
         "a": "Explanation 1  <a href='www.google.com'>here</a>",
@@ -15,16 +15,33 @@
         "c": "Explanation 2",
         "d": "Explanation 2"
       },
-      "correctAnswer": "a",
+      "correctAnswer": "d",
       "difficulty": "beginner"
     },
     {
-      "question": "This is a Sample Question 2?",
+      "question": "Before doing the main experiment, why do we need to titrate the HCl solution against Na₂CO₃ solution?",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "HCl is a primary standard.",
+        "b": "HCl is not a primary standard.",
+        "c": "HCl is not completely soluble.",
+        "d": "Na₂CO₃ is not a primary standard."
+      },
+      "explanations": {
+        "a": "Explanation 1  <a href='www.google.com'>here</a>",
+        "b": "Explanation 2",
+        "c": "Explanation 2",
+        "d": "Explanation 2"
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "According to the experiment, the color of Bromocresol Green at pH ~ 4 is",
+      "answers": {
+        "a": "Blue",
+        "b": "Colorless",
+        "c": "Yellow",
+        "d": "Purple"
       },
       "explanations": {
         "a": "Explanation 1  <a href='www.google.com'>here</a>",
@@ -33,6 +50,40 @@
         "d": "Explanation 2"
       },
       "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "The unit of the solubility product (ksp) of Borax is ",
+      "answers": {
+        "a": "mol dm⁻³",
+        "b": "mol²dm⁻⁶",
+        "c": "mol³dm⁻⁹",
+        "d": "Unitless"
+      },
+      "explanations": {
+        "a": "Explanation 1  <a href='www.google.com'>here</a>",
+        "b": "Explanation 2",
+        "c": "Explanation 2",
+        "d": "Explanation 2"
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Before titrating the Borax solution, why do we keep the solution in the water bath for minimum 10 minutes?",
+      "answers": {
+        "a": "To reach make the reaction spontaneous",
+        "b": "To increase the solubility of Borax.",
+        "c": "To increase reaction free energy.",
+        "d": "To ensure temperature equilibrium between Borax solution and water bath."
+      },
+      "explanations": {
+        "a": "Explanation 1  <a href='www.google.com'>here</a>",
+        "b": "Explanation 2",
+        "c": "Explanation 2",
+        "d": "Explanation 2"
+      },
+      "correctAnswer": "d",
       "difficulty": "beginner"
     }
   ]
