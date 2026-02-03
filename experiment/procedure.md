@@ -16,10 +16,10 @@
 <b>Main Experiment: </b><br>
 10. Click on the borax powder plate to add 25 g of borax into the flask.<br>
 11. Click on the water beaker to pour 75 ml distilled water.<br>
-12. Click on the measuring cylinder to transfer the 75 ml distilled water into the flask.<br>
+12. Click on the measuring cylinder to transfer that 75 ml distilled water into the flask.<br>
 13. Click on the flask to mix the solution for 10–15 minutes.<br>
 14. Place the flask in the temperature bath, set the required temperature, and wait 10 minutes.<br>
-15. Collect 5 ml borax solution using the micropipette.<br>
+15. Collect 5 ml borax solution using the micropipette and pour it into fresh and clean flask.<br>
 16. Add Bromo Cresol Green indicator using the micropipette.<br>
 17. Click on the flask to start titration.<br>
 18. Shake the flask and add standard HCl until the solution turns yellow.<br>
