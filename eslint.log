@@ -1,0 +1,21 @@
+
+/home/runner/work/exp-estimation-of-entropy-iitk/exp-estimation-of-entropy-iitk/experiment/simulation/js/main.js
+    9:5   warning  'observationCount' is assigned a value but never used  no-unused-vars
+   40:10  warning  'pourbyNa2co3' is defined but never used               no-unused-vars
+   56:10  warning  'pourbymeasuringCylinder' is defined but never used    no-unused-vars
+   73:10  warning  'pourbymicropippet' is defined but never used          no-unused-vars
+  124:10  warning  'goingfortitration' is defined but never used          no-unused-vars
+  152:10  warning  'pourborax' is defined but never used                  no-unused-vars
+  168:10  warning  'pourwater' is defined but never used                  no-unused-vars
+  183:10  warning  'pourbycylinder' is defined but never used             no-unused-vars
+  199:10  warning  'goingtobath' is defined but never used                no-unused-vars
+  349:10  warning  'goingfortitration2' is defined but never used         no-unused-vars
+  390:10  warning  'temp1' is defined but never used                      no-unused-vars
+  407:10  warning  'temp2' is defined but never used                      no-unused-vars
+  420:10  warning  'temp3' is defined but never used                      no-unused-vars
+  433:10  warning  'temp4' is defined but never used                      no-unused-vars
+  446:10  warning  'temp5' is defined but never used                      no-unused-vars
+  521:10  warning  'startSetB' is defined but never used                  no-unused-vars
+
+✖ 16 problems (0 errors, 16 warnings)
+
